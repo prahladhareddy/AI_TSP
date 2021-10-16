@@ -1,0 +1,6 @@
+CS18B042 Report
+
+used nearest neighbour huristic and using the output of it used kind of Simulated annealing to search in solution space
+
+I will write detailed report by final dead line I thaought this is not required now
+sorry for short report

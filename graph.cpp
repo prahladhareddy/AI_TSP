@@ -69,3 +69,10 @@ void graph::input(){
     cout.flush();
     cout<<"\n";
   }
+
+  void graph::run(){
+    if(n<10000){
+      TSPNearestNeighbourHurestic();
+    }
+    simAne();
+  }

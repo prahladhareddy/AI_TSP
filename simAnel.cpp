@@ -6,10 +6,15 @@ void graph::simAne(){
     vector<int> v = curr_tour;
     double cc = cost;
     long long  count = 0;
-    double temp = 10000;
-    double mult = 0.9999;
+    double temp = 1000000;
+    double mult = 0.999999;
 
-    while(temp>=0.0001){
+    while(1){
+
+        if(temp<0.00001){
+            temp = 1000000;
+        }
+
         temp*=mult;
         double init = 0;
         int p1 = rand()%n;
@@ -72,6 +77,7 @@ void graph::simAne(){
 
         double prob2 = (double) rand()/RAND_MAX;
 
+        // cout<<prob<<" "<<prob2<<"\n";
         if(prob2<prob){
             double t=v[p1];
             v[p1] = v[p2];

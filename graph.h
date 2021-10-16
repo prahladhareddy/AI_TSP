@@ -11,5 +11,6 @@ class graph{
   vector<int> curr_tour;
   double cost;
   void simAne();
+  void run();
   time_t start,end;
 };

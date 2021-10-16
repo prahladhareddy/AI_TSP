@@ -55,16 +55,9 @@ void graph::input(){
   }
 
   void graph::print_current(){
-    // for(int i=0;i<n;i++){
-    //   cout<<curr_tour[i]<<" ";
-    // }
-
-    cout<<"approx cost = " << cost;
-    double atc_cost = am[curr_tour[n-1]][curr_tour[0]];
-    for(int i=1;i<n;i++){
-      atc_cost += am[curr_tour[i-1]][curr_tour[i]];
+    for(int i=0;i<n;i++){
+      cout<<curr_tour[i]<<" ";
     }
-    cout<<" atchual_cost = " << atc_cost;
 
     cout.flush();
     cout<<"\n";
